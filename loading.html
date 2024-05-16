@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        .loading-container {
+            text-align: center;
+        }
+        .loading-container img {
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <img src="Wahab.gif" alt="Loading...">
+        <p> please wait...</p>
+    </div>
+
+    <script>
+        // Set the time in milliseconds for how long the GIF should be shown
+       // 5 seconds
+
+        // Function to redirect to another HTML file
+        function redirectToAnotherPage() {
+            window.location.href = 'calci.html'; // Change this to your desired HTML file
+        }
+
+        // Trigger the redirect after the loading time
+        setTimeout(redirectToAnotherPage, 5000);
+    </script>
+</body>
+</html>
